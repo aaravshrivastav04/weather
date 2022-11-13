@@ -29,3 +29,26 @@ Example : weather -d london or weather --data-rich london
 ```
 
 If you are using the command without a flag, it will give you the weather of your current location
+
+Here are the instructions to use this command on your machine
+
+Open a terminal and start by cloning the repo on your machine by using the following command
+
+```
+git clone https://github.com/aaravshrivastav04/weather.git
+```
+
+Now move into the directory
+
+
+```
+cd weather
+```
+
+Finally, move it into the /usr/bin directory
+
+```
+sudo mv weather /usr/bin
+```
+
+Now, you can use this command to check the weather of any place anywhere anytime, enjoy!
