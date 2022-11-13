@@ -1,1 +1,24 @@
+#!/bin/bash
 
+echo ""
+
+echo "============================================================"
+echo "NOTE : THE OFFICIAL WEBSITE CREDIT GOES TO @chubin ON GITHUB"
+echo "============================================================"
+
+echo ""
+
+case $1 in
+-r | --region)
+	curl "wttr.in/$2"
+	;;
+-h | --help)
+	curl "wttr.in/:help"
+	;;
+-d | --data-rich)
+	curl wttr.in/$2?format=v2
+	;;
+*)
+	curl "wttr.in"
+	;;
+esac
