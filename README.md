@@ -7,8 +7,6 @@ This script is based on the wttr.in api created by Igor Chubin on github. The of
 https://github.com/chubin/wttr.in
 ```
 
-Note : weather --help or weather -h will lead you to the official help page created by Igor Chubin which gives you instructions on directly accessing the weather through curl requests. This script has been made to make that process a bit simpler and more intuitive. 
-
 The help page for this command has not been created yet but the instructions of using it have been mentioned in this README file. Those using the weather command are recommended to go through those.
 
 Here are the flags the command accepts :
@@ -22,6 +20,7 @@ Example : weather -r london or weather --region london
 -h | --help : This flag will give you a help page created by Igor Chubin as output
 Example : weather -h or weather --help
 ```
+Note : weather --help or weather -h will lead you to the official help page created by Igor Chubin which gives you instructions on directly accessing the weather through curl requests. This script has been made to make that process a bit simpler and more intuitive. 
 
 ```
 -d | --data-rich : The detailed information about the weather of a place including parameters like astronomy can be known through this flag
@@ -32,23 +31,37 @@ If you are using the command without a flag, it will give you the weather of you
 
 Here are the instructions to use this command on your machine
 
-Open a terminal and start by cloning the repo on your machine by using the following command
+Before starting, move into your downloads directory
+
+```
+cd Downloads/
+```
+
+Then clone the repository with the following command
 
 ```
 git clone https://github.com/aaravshrivastav04/weather.git
 ```
 
-Now move into the directory
+Now move into the directory containing the script
 
 
 ```
-cd weather
+cd weather/src
 ```
 
-Finally, move it into the /usr/bin directory
+Then move the script into the /usr/bin directory
 
 ```
 sudo mv weather /usr/bin
 ```
+
+Finally, you can delete the cloned repository from your machine
+
+```
+cd ~/Downloads
+sudo rm -rf weather
+```
+
 
 Now, you can use this command to check the weather of any place anywhere anytime, enjoy!
